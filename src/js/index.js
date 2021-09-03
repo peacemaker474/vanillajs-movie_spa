@@ -1,9 +1,10 @@
 import viewHeader from "./components/viewHeader";
+import modalSearchForm from "./functions/headerModal";
 import viewMain from "./components/viewMain";
+import '../css/main.css';
 
 const navigateTo = (url) => {
     history.pushState(null, null, url);
-    console.log(url);
     router();
 }
 
@@ -13,12 +14,14 @@ const router = () => {
             path: "/",
             view: () => {
                 viewHeader();
+                modalSearchForm();
             }
         },
         {
             path: "/main",
             view: () => {
                 viewHeader();
+                modalSearchForm();
                 viewMain();
             }
         },
@@ -39,7 +42,6 @@ const router = () => {
             isMatch: true,
         };
     }
-    console.log(match);
     match.route.view();
 }
 

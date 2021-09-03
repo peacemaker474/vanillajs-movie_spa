@@ -13,7 +13,14 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
     },
     devServer: {
-        port: 9000,
+        historyApiFallback: true,
+        port: 8000,
+        proxy: {
+            '/api': {
+                target: 'domain.com',
+                changeOrigin: true
+            },
+        }
     },
     module: {
         rules: [

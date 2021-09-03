@@ -17,7 +17,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "bulid": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
