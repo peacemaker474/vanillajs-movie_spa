@@ -25,12 +25,8 @@ const viewHeader = () => {
             </nav>
         </header>
     `;
-    if(document.getElementById("root") !== null) {
-        document.getElementById("root").innerHTML = headerTemplate;
-    }
-    // } else {
-    //     document.querySelector("body").innerHTML = headerTemplate;
-    // }
+    
+    document.getElementById("root").innerHTML = headerTemplate;
 }
 
 export default viewHeader;

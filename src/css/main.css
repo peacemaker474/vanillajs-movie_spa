@@ -1,5 +1,7 @@
 @import url(reset.css);
 @import url(header/header.css);
+@import url(main/upcoming.css);
+@import url(main/detail.css);
 
 html{
     font-size: 10px;
