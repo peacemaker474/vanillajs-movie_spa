@@ -9,7 +9,7 @@ const navigateTo = (url, id) => {
     router(id);
 }
 
-const router = (id) => {
+const router = (id = location.pathname) => {
     const routes = [
         {
             path: "/",
